@@ -140,3 +140,10 @@ spring cloud 集成 dubbo，注册中心，使用nacos
         check: false
 
 ```
+
+## jdk版本可能导致的"opens java.lang"或者"opens java.math"
+
+增加vm参数：
+```shell
+  --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.math=ALL-UNNAMED 
+```
